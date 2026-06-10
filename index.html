@@ -9,6 +9,7 @@
 </head>
 <body>
 
+    <!-- 导航栏 -->
     <header class="navbar">
         <div class="container">
             <a href="index.html" class="logo">EGOGO</a>
@@ -25,7 +26,18 @@
         </div>
     </header>
 
-    <section class="hero">
+    <!-- Banner（用内联样式强制加载根目录的 banner.jpg） -->
+    <section class="hero" style="
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/banner.jpg') center/cover no-repeat !important;
+        margin-top: 60px;
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    ">
         <div class="hero-content">
             <h1>Creative Home Products Manufacturer</h1>
             <p>Brighten Everyday Life with Innovation</p>
@@ -36,6 +48,7 @@
         </div>
     </section>
 
+    <!-- 产品区 -->
     <section class="section products">
         <div class="container">
             <h2 class="section-title">Our Products</h2>
@@ -58,6 +71,7 @@
         </div>
     </section>
 
+    <!-- 页脚 -->
     <footer>
         <div class="container">
             <div class="footer-info">
@@ -76,5 +90,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>
