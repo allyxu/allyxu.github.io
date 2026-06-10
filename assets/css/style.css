@@ -31,6 +31,7 @@ a {
   margin: 0 auto;
 }
 
+/* 导航栏 */
 header {
   background-color: var(--white);
   box-shadow: var(--shadow);
@@ -64,18 +65,7 @@ header {
   color: var(--primary);
 }
 
-.hero {
-  margin-top: 60px;
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-              url("/banner.jpg") center/cover no-repeat;
-  color: var(--white);
-  text-align: center;
-  padding: 100px 20px;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+/* Banner 通用样式（内联样式已经写死了背景图，这里只控制其他） */
 .hero-content h1 {
   font-size: 42px;
   margin-bottom: 16px;
@@ -102,6 +92,7 @@ header {
   background-color: var(--primary-dark);
 }
 
+/* 通用区块 */
 .section {
   padding: 80px 20px;
 }
@@ -122,6 +113,7 @@ header {
   bottom: -12px;
 }
 
+/* 产品网格 */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -150,6 +142,7 @@ header {
   font-size: 14px;
 }
 
+/* 页脚 */
 footer {
   background-color: #222222;
   color: #cccccc;
@@ -173,6 +166,7 @@ footer {
   color: var(--primary);
 }
 
+/* 响应式适配（手机） */
 @media (max-width: 768px) {
   .nav-menu {
     gap: 12px;
