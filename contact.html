@@ -3,76 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Ally Xu from EGOGO - professional silicone night light manufacturer. Reach us via email, WhatsApp or visit our factory.">
-    <title>Contact Us | EGOGO Silicone Night Light</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Contact Us | EGOGO</title>
     <style>
-        .contact-section {
-            padding: 80px 20px;
-            background-color: #f9f9f9;
-        }
-        .contact-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: center;
-        }
-        .contact-info h2 {
-            color: #0052cc;
-            margin-bottom: 20px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid #eee;
-        }
-        .contact-info p {
-            line-height: 1.8;
-            color: #333;
-            margin-bottom: 15px;
-        }
-        .contact-info a {
-            color: #0052cc;
-            text-decoration: none;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-        .contact-photo img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .social-links {
-            margin-top: 20px;
-            display: flex;
-            gap: 15px;
-        }
-        .social-links a {
-            display: inline-block;
-            padding: 8px 16px;
-            background-color: #0052cc;
-            color: #fff;
-            border-radius: 4px;
-            text-decoration: none;
-            font-size: 14px;
-        }
-        .social-links a:hover {
-            background-color: #003d99;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background-color: #fff; color: #333; line-height: 1.6; }
+
+        .navbar { background: #fff; border-bottom: 1px solid #eee; padding: 12px 0; position: sticky; top: 0; z-index: 100; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .navbar .container { display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-size: 22px; font-weight: bold; color: #0052cc; text-decoration: none; }
+        .nav-menu { display: flex; gap: 20px; list-style: none; }
+        .nav-menu a { text-decoration: none; color: #333; padding: 8px 0; }
+        .nav-menu a.active { color: #0052cc; border-bottom: 2px solid #0052cc; }
+
+        .page-header { background: #f5f5f5; padding: 40px 20px; text-align: center; }
+        .page-header h1 { color: #0052cc; margin-bottom: 10px; }
+
+        .contact-section { padding: 60px 20px; background-color: #f9f9f9; }
+        .contact-container { max-width: 1000px; margin: 0 auto; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+        .contact-info h2 { color: #0052cc; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid #eee; }
+        .contact-info p { margin-bottom: 15px; }
+        .contact-info a { color: #0052cc; text-decoration: none; }
+        .contact-photo img { width: 100%; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+
+        .social-links { margin-top: 20px; display: flex; gap: 15px; }
+        .social-links a { display: inline-block; padding: 8px 16px; background-color: #0052cc; color: #fff; border-radius: 4px; text-decoration: none; font-size: 14px; }
+
+        footer { background: #222; color: #fff; padding: 30px 0; text-align: center; }
+
         @media (max-width: 768px) {
-            .contact-container {
-                grid-template-columns: 1fr;
-            }
+            .contact-container { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
 
-<!-- 导航栏 -->
 <header class="navbar">
     <div class="container">
         <a href="index.html" class="logo">EGOGO</a>
@@ -89,7 +54,6 @@
     </div>
 </header>
 
-<!-- 页面标题 -->
 <section class="page-header">
     <div class="container">
         <h1>Contact Us</h1>
@@ -97,7 +61,6 @@
     </div>
 </section>
 
-<!-- 内容区 -->
 <section class="contact-section">
     <div class="contact-container">
         <div class="contact-info">
@@ -116,21 +79,19 @@
             </div>
         </div>
         <div class="contact-photo">
-            <img src="contact.jpg" alt="Ally Xu at Exhibition">
+            <!-- 这里写死了路径，确保能找到图片 -->
+            <img src="./contact.jpg" alt="Ally Xu at Exhibition">
         </div>
     </div>
 </section>
 
-<!-- 页脚 -->
 <footer>
     <div class="container">
-        <div class="footer-info">
-            <p><strong>Ally Xu - Sales Manager</strong></p>
-            <p>Shenzhen Shiguangxiu Technology Co., Ltd</p>
-            <p>Mobile/WeChat: +86 153 0260 2172</p>
-            <p>Email: ally@sztimeshow.com</p>
-            <p>Address: Rm B922-926, Yousong Building, Longhua District, Shenzhen 518100 China</p>
-        </div>
+        <p><strong>Ally Xu - Sales Manager</strong></p>
+        <p>Shenzhen Shiguangxiu Technology Co., Ltd</p>
+        <p>Mobile/WeChat: +86 153 0260 2172</p>
+        <p>Email: ally@sztimeshow.com</p>
+        <p>Address: Rm B922-926, Yousong Building, Longhua District, Shenzhen 518100 China</p>
     </div>
 </footer>
 
