@@ -5,8 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="About EGOGO - professional silicone night light manufacturer with 10+ years experience. Contact us for OEM & ODM inquiries.">
     <title>About Us | EGOGO Silicone Night Light</title>
-    <link rel="stylesheet" href="assets/css/style.css">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 导航栏 */
+        .navbar {
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            padding: 12px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #0052cc;
+            text-decoration: none;
+        }
+        .nav-menu {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        .nav-menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 8px 0;
+        }
+        .nav-menu a.active {
+            color: #0052cc;
+            border-bottom: 2px solid #0052cc;
+        }
+
+        /* 页面头部 */
+        .page-header {
+            background: #f5f5f5;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .page-header h1 {
+            color: #0052cc;
+            margin-bottom: 10px;
+        }
+
+        /* 主体内容 */
         .about-section {
             padding: 80px 20px;
             background-color: #f9f9f9;
@@ -37,6 +99,8 @@
             color: #555;
             line-height: 1.8;
         }
+
+        /* 联系模块 */
         .contact-box {
             background-color: #f5f5f5;
             padding: 30px;
@@ -51,25 +115,39 @@
             margin: 10px 0;
         }
         .contact-info a {
-            color: #0052cc;
+            color: #0066cc;
             text-decoration: none;
         }
-        .social-links {
-            margin-top: 20px;
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* 社交图标样式（和Contact页面统一） */
+        .social-icons {
             display: flex;
-            gap: 15px;
+            gap: 12px;
+            align-items: center;
+            margin-top: 20px;
         }
-        .social-links a {
-            display: inline-block;
-            padding: 8px 16px;
-            background-color: #0052cc;
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+            border: none;
+            transition: transform 0.2s;
+        }
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        /* 页脚 */
+        footer {
+            background: #222;
             color: #fff;
-            border-radius: 4px;
-            text-decoration: none;
-            font-size: 14px;
+            padding: 30px 0;
+            text-align: center;
         }
-        .social-links a:hover {
-            background-color: #003d99;
+        footer p {
+            margin: 5px 0;
         }
     </style>
 </head>
@@ -118,21 +196,34 @@
         <h2>Our Mission</h2>
         <p>To provide safe, innovative, and high-quality lighting products for global customers, and become your most reliable partner.</p>
 
-        <!-- 新增：联系方式和社媒区 -->
+        <!-- 联系区域：全部链接可点击 + 全套社交图标 -->
         <div class="contact-box">
             <h3>Contact Us</h3>
             <div class="contact-info">
                 <p><strong>Sales Manager:</strong> Ally Xu</p>
                 <p><strong>Email:</strong> <a href="mailto:ally@sztimeshow.com">ally@sztimeshow.com</a></p>
-                <p><strong>Mobile / WhatsApp:</strong> +86 153 0260 2172</p>
+                <p><strong>Mobile / WhatsApp:</strong> <a href="tel:+8615302602172">+86 153 0260 2172</a></p>
+                <p><strong>Website:</strong> <a href="https://www.sztimeshow.com" target="_blank">www.sztimeshow.com</a></p>
                 <p><strong>Address:</strong> Rm B922-926, Yousong Building, No.108 Donghuan 1st Rd., Longhua New District, Shenzhen, China</p>
             </div>
 
-            <div class="social-links">
-                <a href="https://wa.me/8615302602172" target="_blank">WhatsApp</a>
-                <a href="#" target="_blank">Facebook</a>
-                <a href="#" target="_blank">Instagram</a>
-                <a href="#" target="_blank">LinkedIn</a>
+            <!-- 社交图标（沿用你全套账号、图标、链接，和Contact页面完全一致） -->
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ally-xu-61a8ab191/?skipRedirect=true" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.youtube.com/@allyxu-SHIGUANGXIU/videos" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61590502165908" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/124/124010.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/allyxuklt/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/174/174855.png" alt="Instagram">
+                </a>
+                <a href="https://wa.me/8615302602172" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/174/174879.png" alt="WhatsApp">
+                </a>
             </div>
         </div>
     </div>
@@ -141,13 +232,11 @@
 <!-- 页脚 -->
 <footer>
     <div class="container">
-        <div class="footer-info">
-            <p><strong>Ally Xu - Sales Manager</strong></p>
-            <p>Shenzhen Shiguangxiu Technology Co., Ltd</p>
-            <p>Mobile/WeChat: +86 153 0260 2172</p>
-            <p>Email: ally@sztimeshow.com</p>
-            <p>Address: Rm B922-926, Yousong Building, Longhua District, Shenzhen 518100 China</p>
-        </div>
+        <p><strong>Ally Xu - Sales Manager</strong></p>
+        <p>Shenzhen Shiguangxiu Technology Co., Ltd</p>
+        <p>Mobile/WeChat: +86 153 0260 2172</p>
+        <p>Email: ally@sztimeshow.com</p>
+        <p>Address: Rm B922-926, Yousong Building, Longhua District, Shenzhen 518100 China</p>
     </div>
 </footer>
 
