@@ -42,10 +42,26 @@
             height: 220px;
             object-fit: cover;
             border-radius: 4px;
+            transition: transform 0.3s ease;
+        }
+        .factory-gallery img:hover {
+            transform: scale(1.05);
         }
         .cta-button {
             text-align: center;
             margin-top: 40px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #0052cc;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #003d99;
         }
     </style>
 </head>
@@ -87,7 +103,6 @@
 
         <h2>Factory Gallery</h2>
         <div class="factory-gallery">
-            <!-- 你上传照片后，把文件名填在这里即可 -->
             <img src="factory1.jpg" alt="Factory workshop">
             <img src="factory2.jpg" alt="Production line">
             <img src="factory3.jpg" alt="Quality control">
