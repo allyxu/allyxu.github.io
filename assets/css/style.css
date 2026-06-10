@@ -12,6 +12,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+<footer>
+  <div class="container">
+    <div class="footer-info">
+      <p><strong>Ally Xu - Sales Manager</strong></p>
+      <p>Shenzhen Shiguangxiu Technology Co., Ltd</p>
+      <p>Mobile/WeChat: +86 153 0260 2172</p>
+      <p>Email: ally@sztimeshow.com</p>
+      <p>Address: Rm B922-926, Yousong Building, Longhua District, Shenzhen 518100 China</p>
+      <div class="social-links">
+        <a href="#">LinkedIn</a>
+        <a href="#">YouTube</a>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
 body {
   font-family: "Microsoft YaHei", Arial, sans-serif;
