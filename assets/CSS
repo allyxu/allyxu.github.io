@@ -1,0 +1,40 @@
+:root{
+  --primary:#ff6699;
+  --white:#fff;
+  --text-dark:#333;
+  --shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Arial,sans-serif;color:var(--text-dark);}
+.container{width:90%;max-width:1200px;margin:0 auto;}
+
+/* 导航栏：固定在顶部 */
+header{
+  background-color:var(--white);
+  box-shadow:var(--shadow);
+  position:fixed;
+  top:0;left:0;width:100%;
+  z-index:99;
+}
+.navbar{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:12px 0;
+}
+.logo{font-size:20px;font-weight:bold;color:var(--primary);text-decoration:none;}
+.nav-menu{display:flex;gap:20px;}
+.nav-menu a{text-decoration:none;font-weight:500;color:var(--text-dark);}
+.nav-menu a:hover,.nav-menu a.active{color:var(--primary);}
+
+/* Banner：往下挪，不被导航挡住 */
+.hero{
+  margin-top:60px; /* 关键：给导航留空间 */
+  background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+              url("banner.jpg") center/cover no-repeat;
+  color:var(--white);text-align:center;
+  padding:100px 20px;min-height:400px;
+  display:flex;align-items:center;justify-content:center;
+}
+.hero-content h1{font-size:36px;margin-bottom:10px;}
+.hero-content p{font-size:18px;margin-bottom:20px;}
+.btn{display:inline-block;padding:10px 20px;background:var(--primary);color:var(--white);text-decoration:none;border-radius:4px;margin:0 5px;}
+.btn:hover{opacity:0.9;}
